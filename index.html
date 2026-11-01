@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жанна | Frontend-разработчик</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Жанна<span class="accent">.dev</span></div>
+            <nav>
+                <a href="#projects">Проекты</a>
+                <a href="#skills">Навыки</a>
+                <a href="#about">Обо мне</a>
+                <a href="#contacts" class="btn-nav">Связаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero container">
+            <h1>Привет! Я Жанна.<br><span class="accent">Frontend-разработчик</span></h1>
+            <p>Верстаю адаптивные сайты на HTML и CSS, пишу логику на JavaScript. Ищу интересные проекты на фрилансе и готова выполнять задачи качественно и в срок.</p>
+            <a href="#projects" class="btn-primary">Посмотреть мои работы</a>
+        </section>
+
+        <!-- НАВЫКИ -->
+        <section id="skills" class="skills container">
+            <h2>Мой стек</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3 (Flexbox, Grid)</span>
+                <span class="skill-tag">JavaScript (DOM, события)</span>
+                <span class="skill-tag">Адаптивная верстка</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Figma</span>
+            </div>
+        </section>
+
+        <!-- ПРОЕКТЫ -->
+        <section id="projects" class="projects-section container">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                
+                <!-- ПРОЕКТ 1: Электро-шоп -->
+                <article class="project-card">
+                    <img src="electronics.jpg" alt="Интернет-магазин электроники" class="project-img">
+                    <div class="project-info">
+                        <h3>Интернет-магазин электроники</h3>
+                        <p>Адаптивная сетка товаров (CSS Grid), счетчик добавления в корзину на чистом JavaScript, Flexbox для шапки сайта.</p>
+                        <div class="project-links">
+                            <a href="https://zannasalamova389-wq.github.io/electro-shop/" target="_blank" class="link-demo">Демо</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ПРОЕКТ 2: Pink Cosmetics (Сайт) -->
+                <article class="project-card">
+                    <img src="cosmetics.jpg" alt="Сайт косметики" class="project-img">
+                    <div class="project-info">
+                        <h3>Лендинг Pink Cosmetics</h3>
+                        <p>Стильный адаптивный лендинг магазина косметики. Верстка карточек товаров и блоков "О нас".</p>
+                        <div class="project-links">
+                            <a href="https://zannasalamova389-wq.github.io/cosmetics-landing-page/" target="_blank" class="link-demo">Демо</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ПРОЕКТ 3: Coffee Time -->
+                <article class="project-card">
+                    <img src="coffee.jpg" alt="Сайт кофейни" class="project-img">
+                    <div class="project-info">
+                        <h3>Кофейня Coffee Time</h3>
+                        <p>Лендинг для кофейни. Красивое меню с карточками, Flexbox/Grid верстка, адаптив под мобильные устройства.</p>
+                        <div class="project-links">
+                            <a href="https://zannasalamova389-wq.github.io/coffee-site/" target="_blank" class="link-demo">Демо</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ПРОЕКТ 4: Pink Cosmetics (Email) -->
+                <article class="project-card">
+                    <img src="email.jpg" alt="Email рассылка" class="project-img">
+                    <div class="project-info">
+                        <h3>Email-рассылка Pink Cosmetics</h3>
+                        <p>Верстка HTML-шаблона для email-рассылки. Кроссбраузерность, табличная верстка, адаптив.</p>
+                        <div class="project-links">
+                            <a href="https://zannasalamova389-wq.github.io/email-layout/" target="_blank" class="link-demo">Демо</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ОБО МНЕ -->
+        <section id="about" class="about container">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Жанна. Я увлечена веб-разработкой и созданием удобных интерфейсов. Имею опыт работы с детьми, что научило меня терпению, вниманию к деталям и умению объяснять сложные вещи простыми словами.</p>
+            <p>Постоянно учусь новому, сейчас активно практикуюсь в JavaScript. Открыта к предложениям о работе и заказам на фрилансе.</p>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer id="contacts">
+        <div class="container">
+            <h2>Давайте работать вместе</h2>
+            <p>Напишите мне в удобном мессенджере или на бирже:</p>
+            <div class="contact-links">
+                <!-- Не забудь поменять ссылку на свой телеграм -->
+                <a href="https://t.me/ТВОЙ_ТЕЛЕГРАМ" target="_blank">Telegram</a>
+                <a href="https://kwork.ru/user/zhannashalamova8383" target="_blank">Kwork</a>
+                <a href="https://github.com/zannasalamova389-wq" target="_blank">GitHub</a>
+            </div>
+            <p class="copyright">© 2024 Жанна. Сделано с любовью к коду.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
