@@ -165,10 +165,14 @@ footer h2 { font-size: 1.8em; margin-bottom: 10px; }
 .copyright { margin-top: 30px; font-size: 0.8em; color: #aaa; }
 
 /* Мобильная версия */
-@media (max-width: 768px) {
-    .header-content { flex-direction: column; gap: 15px; }
-    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    nav a { margin: 0 5px; }
-    .hero h1 { font-size: 2em; }
-    .about { padding: 25px; }
+@media (max-width: 600px) {
+    .card-img {
+        height: auto; /* Позволяем картинке подстраиваться под экран */
+        max-width: 100%;
+        object-fit: contain; /* Или cover, в зависимости от вашего дизайна */
+    }
+    img {
+        max-width: 100%; /* Картинка не должна быть шире экрана */
+        height: auto;    /* Сохраняем пропорции */
+    }
 }
